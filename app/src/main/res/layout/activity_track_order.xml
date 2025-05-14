@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFDD0">
+
+<!-- Delivery Icon -->
+    <ImageView
+        android:id="@+id/ic_shipped"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="6dp"
+        android:padding="12dp"
+        android:src="@drawable/g_logo1" />
+
+    <!-- Checkpoints Layout -->
+    <LinearLayout
+        android:id="@+id/checkpointsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_shipped"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Checkpoint 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/dot"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Confirmed"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Checkpoint 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/dot"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preparing"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Checkpoint 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/dot"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/status3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out for Delivery"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Checkpoint 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:id="@+id/dot4"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/dot"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/status4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Checkpoint 5 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:id="@+id/dot5"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/dot"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/status5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Order Status Text -->
+    <TextView
+        android:id="@+id/orderStatusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Order Confirmed"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:layout_below="@id/checkpointsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <!-- Start Tracking Button -->
+    <Button
+        android:id="@+id/btnTrackOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Tracking"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF4081" />
+</RelativeLayout>

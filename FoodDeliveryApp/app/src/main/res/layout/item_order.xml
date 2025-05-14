@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/order_card_bg"
+    android:padding="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/orderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🧾 Order #12345"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#222" />
+
+    <TextView
+        android:id="@+id/orderDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placed on: 10 April 2025"
+        android:textColor="#101010"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/orderTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: ₹520"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp" />
+
+
+
+    <TextView
+        android:text="Items:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#121111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/orderItemsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="4dp" />
+
+</LinearLayout>
